@@ -14,7 +14,15 @@ export default function(config) {
       // store.commit('show1',true)
       console.log(config);
       if (config.url != "/login" && config.url != "/register" &&localStorage.getItem('token')) {
+<<<<<<< HEAD
         config.headers['Authorization'] = localStorage.getItem("token");
+=======
+<<<<<<< HEAD
+        config.headers['Authorization'] = localStorage.getItem("token");
+=======
+        config.headers['token'] = localStorage.getItem("token");
+>>>>>>> 7c28455f66202b4ead0d5b8f4847278cfafe89c1
+>>>>>>> fbd7a4b09f0ba97ec4eca68c5e96b2b76ce15ec2
         
       }
       return config;

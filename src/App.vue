@@ -5,6 +5,7 @@
 </template>
 
 <style lang="scss">
+<<<<<<< HEAD
 html,
 body,
 #app {
@@ -25,4 +26,12 @@ body,
 .ql-editor{
   min-height: 300px;
 }
+=======
+html,body,#app {
+  height: 100%;
+}
+
+
+
+>>>>>>> fbd7a4b09f0ba97ec4eca68c5e96b2b76ce15ec2
 </style>

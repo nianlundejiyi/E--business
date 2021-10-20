@@ -13,6 +13,10 @@ const routes = [
   {
     path: "/home",
     component: () => import(/* webpackChunkName: "home" */ "../view/home.vue"),
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fbd7a4b09f0ba97ec4eca68c5e96b2b76ce15ec2
     children: [
       { path: "/", redirect: "/home/welcome" },
       {
@@ -41,11 +45,21 @@ const routes = [
         path: "goods",
         component: () =>
           import(/* webpackChunkNa"goods" */ "../components/home/goods.vue"),
+<<<<<<< HEAD
       },
       {
         path: "/goods/add",
         component: () =>
           import(/* webpackChunkNa"add" */ "../components/home/add.vue"),
+=======
+        // children: {
+        //   path: "addgoods",
+        //   component: () =>
+        //     import(
+        //       /* webpackChunkNa"rights */ "../components/home/addgoods.vue"
+        //     ),
+        // },
+>>>>>>> fbd7a4b09f0ba97ec4eca68c5e96b2b76ce15ec2
       },
       {
         path: "params",
@@ -72,6 +86,11 @@ const routes = [
           ),
       },
     ],
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7c28455f66202b4ead0d5b8f4847278cfafe89c1
+>>>>>>> fbd7a4b09f0ba97ec4eca68c5e96b2b76ce15ec2
   },
 ];
 
@@ -86,7 +105,15 @@ router.beforeEach((to, from, next) => {
 
   if (to.path == "/login") return next();
   // 获取token
+<<<<<<< HEAD
   if (!localStorage.getItem("token")) return next("/login");
+=======
+<<<<<<< HEAD
+  if (!localStorage.getItem("token")) return next("/login");
+=======
+  if (!localStorage.getItem('token')) return next("/login");
+>>>>>>> 7c28455f66202b4ead0d5b8f4847278cfafe89c1
+>>>>>>> fbd7a4b09f0ba97ec4eca68c5e96b2b76ce15ec2
   next();
 });
 export default router;

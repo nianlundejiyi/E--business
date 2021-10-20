@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div>
     <!-- 面包屑区域 -->
     <el-breadcrumb separator-class="el-icon-arrow-right">
@@ -76,6 +77,29 @@ export default {
     // myChart.setOption(this.reportdate);
   },
   components: {},
+=======
+    <div>
+
+    </div>
+</template>
+
+<script>
+export default {
+    props: {
+
+    },
+    data() {
+        return {
+
+        };
+    },
+    methods: {
+
+    },
+    components: {
+
+    },
+>>>>>>> fbd7a4b09f0ba97ec4eca68c5e96b2b76ce15ec2
 };
 </script>
 
