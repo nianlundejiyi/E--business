@@ -13,6 +13,7 @@ const routes = [
   {
     path: "/home",
     component: () => import(/* webpackChunkName: "home" */ "../view/home.vue"),
+<<<<<<< HEAD
     children: [
       { path: "/", redirect: "/home/welcome" },
       {
@@ -74,6 +75,8 @@ const routes = [
           ),
       },
     ],
+=======
+>>>>>>> 7c28455f66202b4ead0d5b8f4847278cfafe89c1
   },
 ];
 
@@ -88,7 +91,11 @@ router.beforeEach((to, from, next) => {
 
   if (to.path == "/login") return next();
   // 获取token
+<<<<<<< HEAD
   if (!localStorage.getItem("token")) return next("/login");
+=======
+  if (!localStorage.getItem('token')) return next("/login");
+>>>>>>> 7c28455f66202b4ead0d5b8f4847278cfafe89c1
   next();
 });
 export default router;

@@ -12,6 +12,7 @@
       <!-- 页面主体内容 -->
       <el-container>
         <!-- 侧边栏 -->
+<<<<<<< HEAD
         <el-aside :width="isCollapse?'64px':'200px'">
           <div class="toggle-button" @click="toggcollapse">|||</div>
           <!-- 侧边栏菜单 -->
@@ -45,12 +46,52 @@
         </el-aside>
         <!-- 右侧内容主体 -->
         <el-main><router-view></router-view></el-main>
+=======
+        <el-aside width="200px">
+            <!-- 侧边栏菜单 -->
+          <el-menu 
+            background-color="#545c64"
+            text-color="#fff"
+            active-text-color="#ffd04b"
+          >
+            <el-submenu index="1">
+              <template slot="title">
+                <i class="el-icon-location"></i>
+                <span>用户管理</span>
+              </template>
+              <el-submenu index="1-4">
+                <template slot="title">选项4</template>
+                <el-menu-item index="1-4-1">选项1</el-menu-item>
+              </el-submenu>
+            </el-submenu>
+            <el-menu-item index="2">
+              <i class="el-icon-menu"></i>
+              <span slot="title">权限管理</span>
+            </el-menu-item>
+            <el-menu-item index="3" >
+              <i class="el-icon-document"></i>
+              <span slot="title">商品管理</span>
+            </el-menu-item>
+            <el-menu-item index="4">
+              <i class="el-icon-setting"></i>
+              <span slot="title">订单管理</span>
+            </el-menu-item>
+            <el-menu-item index="5">
+              <i class="el-icon-setting"></i>
+              <span slot="title">数据统计</span>
+            </el-menu-item>
+          </el-menu>
+        </el-aside>
+        <!-- 右侧内容主体 -->
+        <el-main>Main</el-main>
+>>>>>>> 7c28455f66202b4ead0d5b8f4847278cfafe89c1
       </el-container>
     </el-container>
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import Http from "../request/index.js";
 export default {
   props: {},
@@ -69,12 +110,19 @@ export default {
   },
   created() {
     this.getmenulist();
+=======
+export default {
+  props: {},
+  data() {
+    return {};
+>>>>>>> 7c28455f66202b4ead0d5b8f4847278cfafe89c1
   },
   methods: {
     logout() {
       window.sessionStorage.clear();
       this.$router.push("/login");
     },
+<<<<<<< HEAD
     toggcollapse(){
       this.isCollapse=!this.isCollapse
     },
@@ -93,6 +141,8 @@ export default {
         }
       });
     },
+=======
+>>>>>>> 7c28455f66202b4ead0d5b8f4847278cfafe89c1
   },
   components: {},
 };
@@ -114,13 +164,17 @@ export default {
     }
     .el-aside {
       background-color: #333744;
+<<<<<<< HEAD
       .el-menu{
         border-right: none;
       }
+=======
+>>>>>>> 7c28455f66202b4ead0d5b8f4847278cfafe89c1
     }
     .el-main {
       background-color: #eaedf1;
     }
+<<<<<<< HEAD
     .iconfont{
       margin-right: 10px;
     }
@@ -133,6 +187,8 @@ export default {
     color: #fff;
     letter-spacing: 0.2em;
     cursor: pointer;
+=======
+>>>>>>> 7c28455f66202b4ead0d5b8f4847278cfafe89c1
   }
 }
 </style>
